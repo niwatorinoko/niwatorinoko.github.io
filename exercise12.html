@@ -1,52 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Styled Boxes</title>
-    <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-}
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .box {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 20px auto;
+        width: 50%;
+      }
 
-.box {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px auto;
-    padding: 20px;
-    width: 50%;
-    text-align: center;
-}
+      /* Box 1: Light blue background with double red border */
+      .box1 {
+        background-color: #add8e6; /* Light blue */
+        border: 5px double #fd603d;
+      }
 
-/* Box 1: Light blue background with double red border */
-.box1 {
-    background-color: #b0c4de; /* Light blue */
-    border: 5px double red;
-}
+      /* Box 2: Yellow background with blue border */
+      .box2 {
+        background-color: #ffff00;
+        border: 3px solid #0081ff; /* Light blue border */
+        border-radius: 10px; /* Rounded corners */
+      }
 
-/* Box 2: Yellow background with blue border */
-.box2 {
-    background-color: yellow;
-    border: 3px solid blue;
-}
-
-/* Box 3: Green background with polka dot pattern */
-.box3 {
-    background-color: green;
-    background-image: radial-gradient(purple 10%, transparent 10%);
-    background-size: 20px 20px;
-    border: none;
-    color: black;
-}
-
-  </style>
-</head>
-<body>
+      /* Box 3: Green background with polka dot pattern */
+      .box3 {
+        background-color: #3cb371;
+        background-size: 20px 20px;
+        border: 4px dotted #808080; /* Dotted border */
+      }
+    </style>
+  </head>
+  <body>
     <div class="box box1">Hello World</div>
     <div class="box box2">Hello World</div>
     <div class="box box3">Hello World</div>
-</body>
+  </body>
 </html>
